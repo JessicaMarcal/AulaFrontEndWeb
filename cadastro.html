@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Voluntários</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"></a>Indice</li>
+                <li><a href="projeto.html"></a>Nosso Projeto</li>
+                <li><a href="cadastro.html"></a>Seja um Voluntário</li>
+            </ul>
+        </nav>
+    </header>
+    <main> 
+        <section>
+            <h2>Formulário de Cadastro</h2>
+            <form action="processar_cadastro.php" method="post">
+                <label for="nome">Nome Completo:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" required><br><br>
+
+                <label for="interesses">Áreas de Interesse:</label><br>
+                <select id="interesses" name="interesses[]" multiple required>
+                    <option value="resgate">Resgate de Animais</option>
+                    <option value="educacao">Educação e Conscientização</option>
+                    <option value="eventos">Organização de Eventos</option>
+                    <option value="outros">Outros</option>
+                </select><br><br>
+
+                <input type="submit" value="Enviar Cadastro">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
